@@ -1,0 +1,17 @@
+{
+  "-MiBt86VzkC-EGmJnxjm" : {
+    "firebaseKey" : "-MiBt86VzkC-EGmJnxjm",
+    "name" : "Barack",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",
+    "role": "beater",
+    "uid": ""
+  },
+
+  "-NTegHOQPVA5pj6c51n0" : {
+    "firebaseKey" : "-NTegHOQPVA5pj6c51n0",
+    "name" : "Jane",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",
+    "role": "keeper",
+    "uid": "B03WztCuSsWx2FktaSC2afDOWaD3"
+  }
+}
