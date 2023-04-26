@@ -22,11 +22,19 @@ const createHouse = (payload) => new Promise((resolve, reject) => {
     headers: {
       'Content-Type': 'application/json',
     },
-    // take our payload, turn java script object into JSON object
     body: JSON.stringify(payload),
   })
     .then((response) => response.json())
-    .then((data) => resolve(data))
+    .then((data) => {
+      const setcode = { firebaseKey: data.name };
+      fetch(`${endpoint}/houses/${setcode.firebaseKey}.json`, {
+        method: 'PATCH',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(setcode),
+      }).then(resolve);
+    })
     .catch(reject);
 });
 
@@ -72,7 +80,7 @@ const updateHouse = (payload) => new Promise((resolve, reject) => {
 
 // GET A SINGLE AUTHOR'S BOOKS
 const getHouseMembers = (firebaseKey) => new Promise((resolve, reject) => {
-  fetch(`${endpoint}/mambers.json?orderBy="member_id"&equalTo="${firebaseKey}"`, {
+  fetch(`${endpoint}/mambers.json?orderBy="house_id"&equalTo="${firebaseKey}"`, {
     method: 'GET',
     headers: {
       'Content-Type': 'application/json',
