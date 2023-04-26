@@ -1,5 +1,6 @@
 {
   "-MiBt86VzkC-EGmJnxjm" : {
+    "house_id": "-MiBt86VzkC-EGmJnxjm",
     "firebaseKey" : "-MiBt86VzkC-EGmJnxjm",
     "name" : "Barack",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",
@@ -8,6 +9,7 @@
   },
 
   "-NTegHOQPVA5pj6c51n0" : {
+    "house_id": "-NPPy3wYS85TcGsL5HsZ",
     "firebaseKey" : "-NTegHOQPVA5pj6c51n0",
     "name" : "Jane",
     "image": "https://upload.wikimedia.org/wikipedia/commons/8/8d/President_Barack_Obama.jpg",

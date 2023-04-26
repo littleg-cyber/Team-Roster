@@ -1,7 +1,7 @@
-import client from '../utils/client';
+import { clientCredentials } from '../utils/client';
 // API CALLS FOR MEMBERS
 
-const endpoint = client.databaseURL;
+const endpoint = clientCredentials.databaseURL;
 
 // TODO: GET MEMBERS
 const getMembers = (uid) => new Promise((resolve, reject) => {
