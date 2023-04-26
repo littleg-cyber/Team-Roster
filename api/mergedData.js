@@ -1,4 +1,4 @@
-import { getSingleHouse, getHouseMembers, deleteSingleHouse } from './houseData copy';
+import { getSingleHouse, getHouseMembers, deleteSingleHouse } from './houseData';
 import { deleteMember, getSingleMember } from './memberData';
 
 const viewMemberDetails = (memberFirebaseKey) => new Promise((resolve, reject) => {
