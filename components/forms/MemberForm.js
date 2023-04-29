@@ -11,7 +11,7 @@ import { createMember, updateMember } from '../../api/memberData';
 const initialState = {
   image: '',
   name: '',
-  role: false,
+  role: '',
 };
 
 function MemberForm({ obj }) {
@@ -62,9 +62,18 @@ function MemberForm({ obj }) {
           required
         />
       </FloatingLabel>
-
+      <FloatingLabel controlId="floatingInput2" label="Team Role" className="mb-3">
+        <Form.Control
+          type="text"
+          placeholder="role"
+          name="role"
+          value={formInput.role}
+          onChange={handleChange}
+          required
+        />
+      </FloatingLabel>
       {/* IMAGE INPUT  */}
-      <FloatingLabel controlId="floatingInput2" label="Member Image" className="mb-3">
+      <FloatingLabel controlId="floatingInput3" label="Member Image" className="mb-3">
         <Form.Control
           type="url"
           placeholder="Enter an image url"
@@ -74,7 +83,7 @@ function MemberForm({ obj }) {
           required
         />
       </FloatingLabel>
-      {/* AUTHOR SELECT  */}
+      {/* HOUSE SELECT  */}
       <FloatingLabel controlId="floatingSelect" label="House">
         <Form.Select
           aria-label="House"
@@ -108,7 +117,7 @@ MemberForm.propTypes = {
   obj: PropTypes.shape({
     image: PropTypes.string,
     name: PropTypes.string,
-    role: PropTypes.bool,
+    role: PropTypes.string,
     house_id: PropTypes.string,
     firebaseKey: PropTypes.string,
   }),

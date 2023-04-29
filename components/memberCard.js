@@ -40,6 +40,7 @@ MemberCard.propTypes = {
     image: PropTypes.string,
     name: PropTypes.string,
     role: PropTypes.string,
+    house_id: PropTypes.string,
     firebaseKey: PropTypes.string,
   }).isRequired,
   onUpdate: PropTypes.func.isRequired,
