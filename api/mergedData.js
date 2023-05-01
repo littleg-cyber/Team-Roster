@@ -4,7 +4,7 @@ import { deleteMember, getSingleMember } from './memberData';
 const viewMemberDetails = (memberFirebaseKey) => new Promise((resolve, reject) => {
   getSingleMember(memberFirebaseKey)
     .then((memberObject) => {
-      getSingleMember(memberObject.author_id)
+      getSingleHouse(memberObject.house_id)
         .then((houseObject) => {
           resolve({ houseObject, ...memberObject });
         });

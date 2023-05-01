@@ -90,7 +90,7 @@ function MemberForm({ obj }) {
           name="house_id"
           onChange={handleChange}
           className="mb-3"
-          value={obj.house_id} // FIXME: modify code to remove error
+          value={formInput.house_id} // FIXME: modify code to remove error
           required
         >
           <option value="">Select a House</option>
